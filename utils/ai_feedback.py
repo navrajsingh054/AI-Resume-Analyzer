@@ -47,7 +47,7 @@ if GEMINI_API_KEY:
 # GenerativeModel wraps the API with model-specific settings
 # "gemini-1.5-flash" is the free-tier fast model
 # "gemini-1.5-pro" is slower but more capable (same free tier limits)
-MODEL_NAME = "gemini-1.5-flash"
+MODEL_NAME = "gemini-2.0-flash"
 
 # generation_config controls how the model generates text
 GENERATION_CONFIG = {
