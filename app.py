@@ -605,7 +605,7 @@ def main():
     # This prevents re-running analysis when user switches tabs
     if analyze_clicked or "analysis_done" not in st.session_state:
         if analyze_clicked:
-         file_ext = os.path.splitext(uploaded_file.name)[1].lower()
+          file_ext = os.path.splitext(uploaded_file.name)[1].lower()
 
         # ── Validate file size (max 10MB) ──────────────────────────
         file_size_mb = len(uploaded_file.getvalue()) / (1024 * 1024)
