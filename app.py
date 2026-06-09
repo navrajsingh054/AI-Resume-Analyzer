@@ -603,9 +603,8 @@ def main():
     # ── Store analysis results in session_state ────────────────────
     # st.session_state persists values across reruns within the same session
     # This prevents re-running analysis when user switches tabs
-    if analyze_clicked or "analysis_done" not in st.session_state:
-        if analyze_clicked:
-          file_ext = os.path.splitext(uploaded_file.name)[1].lower()
+    if analyze_clicked:
+        file_ext = os.path.splitext(uploaded_file.name)[1].lower()
 
         # ── Validate file size (max 10MB) ──────────────────────────
         file_size_mb = len(uploaded_file.getvalue()) / (1024 * 1024)
@@ -617,7 +616,6 @@ def main():
         if file_ext not in [".pdf", ".docx"]:
             st.error(f"Unsupported format '{file_ext}'. Upload PDF or DOCX only.")
             st.stop()
-
         # ── Extract text ───────────────────────────────────────────
         with st.spinner("📄 Extracting text from resume..."):
             try:
