@@ -73,6 +73,7 @@ st.markdown("""
     padding: 12px 16px;
     margin: 8px 0;
     border-radius: 0 8px 8px 0;
+    color: #212529 !important;
 }
 
 /* Action item cards */
@@ -82,6 +83,7 @@ st.markdown("""
     padding: 10px 14px;
     margin: 6px 0;
     border-radius: 0 8px 8px 0;
+    color: #212529 !important;
 }
 </style>
 """, unsafe_allow_html=True)
